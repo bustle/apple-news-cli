@@ -1,0 +1,16 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "standard",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "rules": {
+    "no-console": "error",
+    "import/no-unresolved": [
+      2
+    ]
+  }
+}
