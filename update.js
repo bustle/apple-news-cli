@@ -27,10 +27,10 @@ exports.handler = function ({ apiId, apiSecret, article: articlePath, articleId 
 
   client.readArticle({ articleId }, (err, { revision }) => {
     if (err) throw err
-    client.updateArticle({ articleId, revision, article }, (err, { id }) => {
+    client.updateArticle({ articleId, revision, article }, (err, resp) => {
       if (err) throw err
       console.log('Article Updated')
-      console.log(`ID: ${id}`)
+      console.log(`ID: ${resp.id}`)
     })
   })
 }
