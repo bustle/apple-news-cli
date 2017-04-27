@@ -14,5 +14,7 @@ require('yargs')
   .command(require('./search'))
   .command(require('./create'))
   .command(require('./update'))
+  .command(require('./read'))
+  .command(require('./delete'))
   .help()
   .argv

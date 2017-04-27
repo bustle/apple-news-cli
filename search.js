@@ -17,6 +17,7 @@ exports.handler = function ({ apiId, apiSecret, channelId }) {
     articles.map((article) => {
       if (err) throw err
       console.log(`Title: ${article.title}
+STATE: ${article.state}
 ID: ${article.id}
 URL: ${article.shareUrl}
 -------------`)
